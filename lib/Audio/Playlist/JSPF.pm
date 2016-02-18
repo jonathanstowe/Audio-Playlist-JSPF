@@ -13,6 +13,17 @@ Audio::Playlist::JSPF - JSON playlist description
 
 =begin code
 
+    use Audio::Playlist::JSPF;
+
+    my $playlist = Audio::Playlist::JSPF.new(title => "My New Playlist");
+    $playlist.track.append: Audio::Playlist::JSPF::Track.new(title => "some track", location => ["http://example.com/mp3"]);
+
+    # etc
+
+    my $json = $playlist.to-json;
+
+    # do something with the JSON
+
 =end code
 
 =head1 DESCRIPTION
@@ -23,6 +34,14 @@ a format for sharing media playlists.
 Because this does the role L<JSON::Class> the objects can be created
 directly from and serialised to JSON via the C<from-json> and C<to-json>
 methods that role provides.
+
+=head2 method add-track
+
+    method add-track(*%track-data) returns Track
+
+This is a convenience for adding a new track to the playlist, the named arguments
+should be the names of the attributes of L<Track> described below, it returns the
+newly created track object.
 
 =head2 attribute title
 
@@ -161,9 +180,15 @@ class Audio::Playlist::JSPF:ver<0.0.1>:auth<github:jonathanstowe> does JSON::Cla
         has Str         $.location      is rw is json-skip-null;
         has Track       @.track;
         has DateTime    $.date          is unmarshalled-by('new') is marshalled-by('Str') = DateTime.now;
+
+        method add-track(*%track-data) {
+            my $track = Track.new(|%track-data);
+            @!track.append: $track;
+            $track;
+        }
     }
 
-    has Playlist $.playlist  handles <identifier title attribution info annotation image license create location track date>;
+    has Playlist $.playlist  handles <identifier title attribution info annotation image license create location track date add-track>;
 
     multi submethod BUILD(*%args) {
         if %args<playlist>:exists {

@@ -15,6 +15,9 @@ isa-ok $pl.playlist, Audio::Playlist::JSPF::Playlist, "and we populated the play
 lives-ok { $pl.track.append: Audio::Playlist::JSPF::Track.new(title => "foo", creator => "Me") }, "add a track";
 is $pl.track.elems, 1, "should have one track";
 
+lives-ok { $pl.add-track(title => "some track") }, "add-track";
+is $pl.track.elems, 2, "should have one more track";
+
 say $pl.to-json;
 
 
