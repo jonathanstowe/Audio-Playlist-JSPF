@@ -2,9 +2,11 @@
 
 JSON representation of a 'playlist'
 
+[![Build Status](https://travis-ci.org/jonathanstowe/Audio-Playlist-JSPF.svg?branch=master)](https://travis-ci.org/jonathanstowe/Audio-Playlist-JSPF)
+
 ## Synopsis
 
-```
+```perl6
 
 use Audio::Playlist::JSPF;
 
