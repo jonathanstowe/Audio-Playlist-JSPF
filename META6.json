@@ -2,7 +2,7 @@
   "name": "Audio::Playlist::JSPF",
   "source-url": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
   "support": {
-    "source": "git://github.com/jonathan/stowe/Audio-Playlist-JSPF.git"
+    "source": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git"
   },
   "perl": "6.c",
   "resources": [
