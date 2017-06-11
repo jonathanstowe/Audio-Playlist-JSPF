@@ -18,8 +18,5 @@ is $pl.track.elems, 1, "should have one track";
 lives-ok { $pl.add-track(title => "some track") }, "add-track";
 is $pl.track.elems, 2, "should have one more track";
 
-say $pl.to-json;
-
-
 done-testing;
 # vim: expandtab shiftwidth=4 ft=perl6
