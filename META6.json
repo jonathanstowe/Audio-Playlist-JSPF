@@ -1,5 +1,9 @@
 {
   "name": "Audio::Playlist::JSPF",
+  "version": "0.0.3",
+  "auth": "github:jonathanstowe",
+  "api": "1.0",
+  "description": "JSON representation of a 'playlist'",
   "source-url": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
   "support": {
     "source": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
@@ -8,12 +12,9 @@
   },
   "perl": "6.*",
   "resources": [
-    
   ],
   "build-depends": [
-    
   ],
-  "auth": "github:jonathanstowe",
   "depends": [
     "JSON::Class"
   ],
@@ -30,10 +31,8 @@
   "provides": {
     "Audio::Playlist::JSPF": "lib/Audio/Playlist/JSPF.pm"
   },
-  "version": "0.0.2",
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
-  "description": "JSON representation of a 'playlist'",
   "meta-version": "0"
 }
