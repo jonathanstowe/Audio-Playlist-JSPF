@@ -163,8 +163,8 @@ class Audio::Playlist::JSPF:ver<0.0.2>:auth<github:jonathanstowe> does JSON::Cla
         has Str         $.image         is rw is json-skip-null;
         has Str         @.location;
         has Str         $.creator       is rw is json-skip-null;
-        sub duration-from-millis($m) { Duration.new($m/1000) }
-        sub millis-from-duration($d) { ($d.Rat * 1000).Int }
+        sub duration-from-millis($m --> Duration ) { Duration.new($m/1000) }
+        sub millis-from-duration($d --> Int ) { ($d.Rat * 1000).Int }
         has Duration    $.duration      is unmarshalled-by(&duration-from-millis) is marshalled-by(&millis-from-duration) is json-skip-null;
     }
 
@@ -181,7 +181,7 @@ class Audio::Playlist::JSPF:ver<0.0.2>:auth<github:jonathanstowe> does JSON::Cla
         has Track       @.track;
         has DateTime    $.date          is unmarshalled-by('new') is marshalled-by('Str') = DateTime.now;
 
-        method add-track(*%track-data) {
+        method add-track(*%track-data --> Track) {
             my $track = Track.new(|%track-data);
             @!track.append: $track;
             $track;
