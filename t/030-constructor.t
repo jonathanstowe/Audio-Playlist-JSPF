@@ -1,4 +1,4 @@
-#!perl6
+#!raku
 
 use v6;
 
@@ -19,4 +19,4 @@ lives-ok { $pl.add-track(title => "some track") }, "add-track";
 is $pl.track.elems, 2, "should have one more track";
 
 done-testing;
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku

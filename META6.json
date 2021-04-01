@@ -1,6 +1,6 @@
 {
   "name": "Audio::Playlist::JSPF",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "auth": "github:jonathanstowe",
   "api": "1.0",
   "description": "JSON representation of a 'playlist'",
@@ -11,6 +11,7 @@
 	"email" : "jns+gh@gellyfish.co.uk"
   },
   "perl": "6.*",
+  "raku": "6.*",
   "resources": [
   ],
   "build-depends": [
@@ -20,7 +21,7 @@
   ],
   "depends": [
     "JSON::Class",
-	"JSON::Name"
+	 "JSON::Name"
   ],
   "tags": [
     "playlist",
@@ -35,5 +36,5 @@
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
-  "meta-version": "0"
+  "meta-version": "1"
 }

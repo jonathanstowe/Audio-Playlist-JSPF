@@ -1,4 +1,4 @@
-#!perl6
+#!raku
 
 use v6;
 
@@ -26,4 +26,4 @@ lives-ok { $pl = Audio::Playlist::JSPF.from-json($json) }, "and back again";
 
 
 done-testing;
-# vim: expandtab shiftwidth=4 ft=perl6
+# vim: expandtab shiftwidth=4 ft=raku

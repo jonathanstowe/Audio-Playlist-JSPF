@@ -2,11 +2,11 @@
 
 JSON representation of a 'playlist'
 
-[![Build Status](https://travis-ci.org/jonathanstowe/Audio-Playlist-JSPF.svg?branch=master)](https://travis-ci.org/jonathanstowe/Audio-Playlist-JSPF)
+![Build Status](https://github.com/jonathanstowe/Audio-Playlist-JSPF/workflows/CI/badge.svg)
 
 ## Synopsis
 
-```perl6
+```raku
 
 use Audio::Playlist::JSPF;
 
@@ -40,8 +40,7 @@ playlists but JSON is convenient for a variety of reasons.
 
 ## Installation
 
-Assuming you have a working Rakudo Perl 6 installation you should be able to
-install this with *zef* :
+Assuming you have a working Rakudo installation you should be able to install this with *zef* :
 
     # From the source directory
    
@@ -53,8 +52,7 @@ install this with *zef* :
 
 ## Support
 
-If you have any problems or suggestions with this module please
-report them at:
+If you have any problems or suggestions with this module please report them at:
 
 https://github.com/jonathanstowe/Audio-Playlist-JSPF/issues
 
@@ -67,5 +65,4 @@ This is free software.
 
 Please see the [LICENCE](LICENCE) file in the distribution
 
-© Jonathan Stowe 2016, 2017, 2019
-
+© Jonathan Stowe 2016 - 2021
