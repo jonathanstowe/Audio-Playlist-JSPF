@@ -1,27 +1,13 @@
 {
-  "name": "Audio::Playlist::JSPF",
-  "version": "0.0.4",
-  "auth": "github:jonathanstowe",
+  "meta-version": "1",
+  "license": "Artistic-2.0",
   "api": "1.0",
-  "description": "JSON representation of a 'playlist'",
-  "source-url": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
-  "support": {
-    "source": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
-	"bugtracker" : "https://github.com/jonathanstowe/Audio-Playlist-JSPF/issues",
-	"email" : "jns+gh@gellyfish.co.uk"
-  },
-  "perl": "6.*",
-  "raku": "6.*",
-  "resources": [
-  ],
-  "build-depends": [
-  ],
+  "version": "0.0.5",
   "test-depends": [
     "Test"
   ],
-  "depends": [
-    "JSON::Class",
-	 "JSON::Name"
+  "source-url": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git",
+  "resources": [
   ],
   "tags": [
     "playlist",
@@ -29,12 +15,25 @@
     "JSON",
     "xiph"
   ],
-  "license": "Artistic-2.0",
-  "provides": {
-    "Audio::Playlist::JSPF": "lib/Audio/Playlist/JSPF.pm"
-  },
   "authors": [
     "Jonathan Stowe <jns+gh@gellyfish.co.uk>"
   ],
-  "meta-version": "1"
+  "raku": "6.*",
+  "build-depends": [
+  ],
+  "name": "Audio::Playlist::JSPF",
+  "support": {
+    "bugtracker": "https://github.com/jonathanstowe/Audio-Playlist-JSPF/issues",
+    "email": "jns+gh@gellyfish.co.uk",
+    "source": "git://github.com/jonathanstowe/Audio-Playlist-JSPF.git"
+  },
+  "depends": [
+    "JSON::Class",
+    "JSON::Name"
+  ],
+  "auth": "zef:jonathanstowe",
+  "provides": {
+    "Audio::Playlist::JSPF": "lib/Audio/Playlist/JSPF.pm"
+  },
+  "description": "JSON representation of a 'playlist'"
 }
