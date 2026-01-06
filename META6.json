@@ -2,7 +2,7 @@
   "meta-version": "1",
   "license": "Artistic-2.0",
   "api": "1.0",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "test-depends": [
     "Test"
   ],
@@ -33,7 +33,7 @@
   ],
   "auth": "zef:jonathanstowe",
   "provides": {
-    "Audio::Playlist::JSPF": "lib/Audio/Playlist/JSPF.pm"
+    "Audio::Playlist::JSPF": "lib/Audio/Playlist/JSPF.rakumod"
   },
   "description": "JSON representation of a 'playlist'"
 }
